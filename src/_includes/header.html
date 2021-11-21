@@ -3,6 +3,7 @@
     background: var(--black);
     font-family: var(--font-family);
     position: relative;
+    max-width: 100%;
   }
 
   .lwj-demo-header .logo-wrapper {
@@ -12,7 +13,7 @@
     justify-content: flex-start;
     padding: 0 1rem;
     position: relative;
-    width: 100vw;
+    width: 100%;
   }
 
   .lwj-demo-header .logo-wrapper::after {
@@ -99,7 +100,7 @@
     height: 9px;
     position: relative;
     top: 100%;
-    width: 100vw;
+    width: 100%;
     z-index: 5;
   }
 
@@ -108,7 +109,7 @@
     content: '';
     position: absolute;
     left: 0;
-    width: 100vw;
+    width: 100%;
   }
 
   .lwj-demo-header .top-bar::before {
@@ -130,9 +131,7 @@
     <a href="https://www.learnwithjason.dev" class="logo"
       ><img src="/images/learn-with-jason-dark.svg" alt="Learn With Jason"
     /></a>
-    <a href="/" rel="home" class="home-link">
-      {{ meta.title }}
-    </a>
+    <a href="/" rel="home" class="home-link"> {{ meta.title }} </a>
   </div>
 
   <div class="top-bar"></div>

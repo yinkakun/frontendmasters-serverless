@@ -9,7 +9,7 @@
   .movie {
     display: flex;
     flex-direction: column;
-    max-width: 90vw;
+    max-width: 80vw;
   }
 
   .movie img {
@@ -55,3 +55,18 @@
 </style>
 
 <h1>Movies, Floofed</h1>
+
+<div class="movies"></div>
+
+<template id="movie-template">
+  <div class="movie">
+    <img src="" alt="" />
+    <h2></h2>
+    <p class="tagline"></p>
+
+    <h3>Viewer Ratings</h3>
+    <ul class="scores"></ul>
+  </div>
+</template>
+
+<script src="./js/scripts.js"></script>
